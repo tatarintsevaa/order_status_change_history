@@ -1,0 +1,33 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::order_status_change_history"
+msgid "Order status change history"
+msgstr "Order status change history"
+
+msgctxt "Addons::description::order_status_change_history"
+msgid "Change history of order statuses"
+msgstr "Change history of order statuses"
+
+msgctxt "Languages::order_status_change_history_menu_description"
+msgid "Change history of order statuses"
+msgstr "Change history of order statuses"
+
+msgctxt "Languages::order_status_change_history"
+msgid "Change history of order statuses"
+msgstr "Change history of order statuses"
+
+msgctxt "Languages::order_status_change_history_menu_description"
+msgid "Change history of order statuses"
+msgstr "Change history of order statuses"
+
+msgctxt "Languages::old_order_status"
+msgid "Old status"
+msgstr "Old status"
+
+msgctxt "Languages::new_order_status"
+msgid "New status"
+msgstr "New status"
