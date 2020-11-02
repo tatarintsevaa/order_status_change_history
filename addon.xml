@@ -7,4 +7,28 @@
     <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
     <default_language>en</default_language>
     <status>active</status>
+    <queries>
+        <item for="install">
+            DROP TABLE IF EXISTS ?:order_status_change_history;
+        </item>
+        <item for="install">
+            CREATE TABLE `?:order_status_change_history` (
+            `log_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+            `order_id` mediumint(8) unsigned NOT NULL default '0',
+            `user_id` mediumint(8) unsigned NOT NULL default '0',
+            `timestamp` int(11) unsigned NOT NULL default '0',
+            `old_status` varchar(250) NOT NULL default '',
+            `new_status` varchar(250) NOT NULL default '',
+            PRIMARY KEY  (`log_id`),
+            KEY `user_id` (`user_id`),
+            KEY `order_id` (`order_id`),
+            KEY `timestamp` (`timestamp`),
+            KEY `old_status` (`old_status`),
+            KEY `new_status` (`new_status`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS ?:order_status_change_history;
+        </item>
+    </queries>
 </addon>

@@ -12,15 +12,14 @@
  * "copyright.txt" FILE PROVIDED WITH THIS DISTRIBUTION PACKAGE.            *
  ****************************************************************************/
 
-use Tygh\Registry;
-
 if (!defined('BOOTSTRAP')) { die('Access denied'); }
 
-if ($mode == 'manage') {
+fn_register_hooks(
+    'change_order_status'
+);
 
-    list($history, $search) = fn_get_order_status_change_history($_REQUEST, Registry::get('settings.Appearance.admin_elements_per_page'));
 
-    Tygh::$app['view']
-        ->assign('history', $history)
-        ->assign('search', $search);
-}
+
+
+
+
